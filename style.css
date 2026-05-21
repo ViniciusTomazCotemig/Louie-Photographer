@@ -126,10 +126,10 @@ main{
 
 .hero-img{
     display: block;
-    flex-grow: 1;
+    flex: 1 0 45% ;
     height: 100vh;
     max-width: 100%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .hero-content{
