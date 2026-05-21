@@ -1,0 +1,79 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 3.5rem 0;
+}
+
+.content{
+    width: 75%;
+}
+
+.content h3{
+    font-size: 1.75rem;
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.grid-forms{
+    display: grid;
+    grid-template-rows: 145px auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+            "i i"
+            "form map";
+    color: #999999;
+    gap: 3rem 1.75rem;
+}
+
+.informations{
+    grid-area: i;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+}
+
+.information{
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.information span{
+    color: #1a1a1a;
+}
+
+form{
+    grid-area: form;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    gap: 1rem;
+}
+
+.maps{
+    grid-area: map;
+}
+
+form input{
+    height: 52px;
+}
+
+form input, form textarea{
+    padding: 6px .75rem;
+    background-color: white;
+    border: 1px solid #99999955;
+}
+
+form button{
+    padding: 1rem 3rem;
+    background-color: #ccb78f;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50rem;
+    border: none;
+    width: fit-content;
+    margin-bottom: 1rem;
+}

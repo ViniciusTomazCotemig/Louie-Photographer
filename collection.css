@@ -1,0 +1,91 @@
+.collection-grid {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 250px);
+  gap: 1rem;
+}
+
+.collection-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  cursor: zoom-in;
+}
+
+.collection-item:hover .collection-item-content {
+  opacity: 100%;
+}
+
+.collection-item .collection-img {
+  width: 100%;
+  grid-column: 1;
+  grid-row: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.collection-item:nth-child(1) .collection-img {
+  background-image: url('assets/image_1.jpg');
+}
+.collection-item:nth-child(2) .collection-img {
+  background-image: url('assets/image_2.jpg');
+}
+.collection-item:nth-child(3) .collection-img {
+  background-image: url('assets/image_3.jpg');
+}
+.collection-item:nth-child(4) .collection-img {
+  background-image: url('assets/image_4.jpg');
+}
+.collection-item:nth-child(5) .collection-img {
+  background-image: url('assets/image_5.jpg');
+}
+.collection-item:nth-child(6) .collection-img {
+  background-image: url('assets/image_6.jpg');
+}
+.collection-item:nth-child(7) .collection-img {
+  background-image: url('assets/image_7.jpg');
+}
+.collection-item:nth-child(8) .collection-img {
+  background-image: url('assets/image_8.jpg');
+}
+.collection-item:nth-child(9) .collection-img {
+  background-image: url('assets/image_9.jpg');
+}
+.collection-item:nth-child(10) .collection-img {
+  background-image: url('assets/image_10.jpg');
+}
+.collection-item:nth-child(11) .collection-img {
+  background-image: url('assets/image_11.jpg');
+}
+.collection-item:nth-child(12) .collection-img {
+  background-image: url('assets/image_12.jpg');
+}
+
+.collection-item-content {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1.5rem;
+  color: white;
+  transition: 0.3s;
+}
+
+.collection-item-content h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.collection-item-content p {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffffcc;
+}
