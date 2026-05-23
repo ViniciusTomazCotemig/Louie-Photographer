@@ -300,6 +300,7 @@ footer > p{
 .footer-images-grid img{
     aspect-ratio: 1/1;
     width: 100px;
+    object-fit: cover;
 }
 
 .archives li{
